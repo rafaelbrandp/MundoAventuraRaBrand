@@ -1,0 +1,13 @@
+
+Para configurar la aplicacion se debe:
+
+Proyecto MiApi
+Configurar el servidor de bases de datos y sus credenciales en archivo:
+appsettings.json
+
+
+Proyecto UI
+Configurar el nombre del servidor web en archivo:
+Scripts\Global.js
+
+

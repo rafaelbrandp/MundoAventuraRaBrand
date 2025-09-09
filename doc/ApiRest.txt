@@ -1,0 +1,201 @@
+
+Ejemplo de estructuras Json para uso de las APIs REST
+
+
+https://localhost:44314/api/Customers/2
+GET[id]
+
+
+https://localhost:44314/api/Customers
+GET
+
+
+https://localhost:44314/api/Customers
+POST
+{
+    "tipoIdentificacion": "TI",
+    "numeroIdentificacion": "123456789",
+    "nombres": "Juan Pérez",
+    "email": "juan@example.com",
+    "telefono": "3001234567",
+    "direccion": "Calle 123",
+    "ciudad": "Bogotá",
+    "pais": "CO"
+}
+
+
+
+https://localhost:44314/api/Customers/Update
+POST
+{
+	"idCliente": 6,
+    "tipoIdentificacion": "TI",
+    "numeroIdentificacion": "987654321",
+    "nombres": "Lopez Pérez",
+    "email": "juan@example.com",
+    "telefono": "3001234567",
+    "direccion": "Calle 123",
+    "ciudad": "Paris",
+    "pais": "FR"
+}
+
+
+https://localhost:44314/api/Customers/Delete/6
+POST
+
+
+https://localhost:44314/api/Products/3
+GET[id]
+
+
+https://localhost:44314/api/Products
+GET
+
+
+https://localhost:44314/api/Products
+POST
+{
+	"nombre": "Zapatos", 
+	"precioUnitario": 165000, 
+	"impuesto": 16
+}
+
+https://localhost:44314/api/Products/Update
+POST
+{
+	"idProducto": 6,
+	"nombre": "Zapatos Rojos", 
+	"precioUnitario": 175000, 
+	"impuesto": 16
+}
+
+https://localhost:44314/api/Products/Delete
+POST
+
+
+
+
+https://localhost:44314/api/Invoices
+POST
+{
+    "numeroFactura": "002",
+    "fechaFactura": "2025-09-07",
+    "idCliente": 2,
+    "estado": "Emitida",
+    "moneda": "COP",
+    "subtotalSinImpuestos": 210000.0000,
+    "totalImpuestos": 37200.0000,
+    "costoEnvio": 0.0000,
+    "descuento": 0.0000,
+    "totalFactura": 172800.0000,
+    "items": [
+        {
+            "idProducto": 1,
+            "cantidad": 2,
+            "precioUnitario": 60000.0000,
+            "impuesto": 19.00
+        },
+        {
+            "idProducto": 3,
+            "cantidad": 1,
+            "precioUnitario": 90000.0000,
+            "impuesto": 16.00
+        },
+        {
+            "idProducto": 4,
+            "cantidad": 1,
+            "precioUnitario": 90000.0000,
+            "impuesto": 16.00
+        }		
+    ]
+}
+
+https://localhost:44314/api/Invoices
+PUT
+{
+	"idFactura": 3,
+    "numeroFactura": "003",
+    "fechaFactura": "2025-05-31",
+    "idCliente": 3,
+    "estado": "Emitida",
+    "moneda": "COP",
+    "subtotalSinImpuestos": 210000,
+    "totalImpuestos": 3200,
+    "costoEnvio": 0,
+    "descuento": 0,
+    "totalFactura": 12800,
+    "items": [
+
+        {
+            "idProducto": 3,
+            "cantidad": 1,
+            "precioUnitario": 90000,
+            "impuesto": 16.00
+        },
+        {
+            "idProducto": 4,
+            "cantidad": 1,
+            "precioUnitario": 90000,
+            "impuesto": 16.00
+        }		
+    ]
+}
+
+
+https://localhost:44314/api/InvoiceLines
+POST
+{
+    "idCliente": 2,
+    "fechaPedido": "2025-07-07",
+    "estado": "Emitida",
+    "moneda": "COP",
+    "subtotalSinImpuestos": 220000,
+    "totalImpuestos": 37200,
+    "costoEnvio": 0,
+    "descuento": 0,
+    "totalPedido": 172800,
+    "items": [
+        {
+            "idProducto": 1,
+            "cantidad": 2,
+            "precioUnitario": 60000,
+            "impuesto": 19.00
+        },
+        {
+            "idProducto": 4,
+            "cantidad": 1,
+            "precioUnitario": 90000,
+            "impuesto": 16.00
+        }		
+    ]
+}
+
+https://localhost:44314/api/InvoiceLines
+PUT
+{
+	"idPedido": 2,
+    "idCliente": 2,
+    "fechaPedido": "2025-07-07",
+    "estado": "Emitida",
+    "moneda": "COP",
+    "subtotalSinImpuestos": 220000,
+    "totalImpuestos": 37200,
+    "costoEnvio": 0,
+    "descuento": 0,
+    "totalPedido": 172800,
+    "items": [
+        {
+            "idProducto": 2,
+            "cantidad": 2,
+            "precioUnitario": 60000,
+            "impuesto": 19.00
+        },
+        {
+            "idProducto": 3,
+            "cantidad": 1,
+            "precioUnitario": 90000,
+            "impuesto": 16.00
+        }		
+    ]
+}
+

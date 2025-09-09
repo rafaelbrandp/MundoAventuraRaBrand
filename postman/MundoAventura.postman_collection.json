@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "e515a122-faa3-4771-bfed-48ebf3b4ada7",
+		"name": "MundoAventura",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9885823"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44314/api/Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44314/api/Customers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Customers/Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"ciudad\":\"COTA\",\r\n\"direccion\":\"CALLE 15 8 - 22\",\r\n\"email\":\"dianabobadillam@gmail.com\",\r\n\"idCliente\":14,\r\n\"nombres\":\"Juan Perezkk\",\r\n\"numeroIdentificacion\":\"12345678A\",\r\n\"pais\":\"CO\",\r\n\"telefono\":\"3003734345\",\r\n\"tipoIdentificacion\":\"DNI\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/api/Customers/Update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Customers",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Customers/Delete/7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44314/api/Customers/Delete/7",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Customers",
+						"Delete",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Products/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44314/api/Products/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nombre\": \"Zapatos\", \r\n\t\"precioUnitario\": 165000, \r\n\t\"impuesto\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/api/Products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Products/Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idProducto\": 6,\r\n\t\"nombre\": \"Zapatos Rojos\", \r\n\t\"precioUnitario\": 175000, \r\n\t\"impuesto\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/api/Products/Update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Products",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Products/Delete/6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44314/api/Products/Delete/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Products",
+						"Delete",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Invoices/002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44314/api/Invoices/002",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Invoices",
+						"002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Invoices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroFactura\": \"002\",\r\n    \"fechaFactura\": \"2025-09-07\",\r\n    \"idCliente\": 2,\r\n    \"estado\": \"Emitida\",\r\n    \"moneda\": \"COP\",\r\n    \"subtotalSinImpuestos\": 210000.0000,\r\n    \"totalImpuestos\": 37200.0000,\r\n    \"costoEnvio\": 0.0000,\r\n    \"descuento\": 0.0000,\r\n    \"totalFactura\": 172800.0000,\r\n    \"items\": [\r\n        {\r\n            \"idProducto\": 1,\r\n            \"cantidad\": 2,\r\n            \"precioUnitario\": 60000.0000,\r\n            \"impuesto\": 19.00\r\n        },\r\n        {\r\n            \"idProducto\": 3,\r\n            \"cantidad\": 1,\r\n            \"precioUnitario\": 90000.0000,\r\n            \"impuesto\": 16.00\r\n        },\r\n        {\r\n            \"idProducto\": 4,\r\n            \"cantidad\": 1,\r\n            \"precioUnitario\": 90000.0000,\r\n            \"impuesto\": 16.00\r\n        }\t\t\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/api/Invoices",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Invoices/008",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44314/api/Invoices/008",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Invoices",
+						"008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/Invoices",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idFactura\": 3,\r\n    \"numeroFactura\": \"003\",\r\n    \"fechaFactura\": \"2025-05-31\",\r\n    \"idCliente\": 3,\r\n    \"estado\": \"Emitida\",\r\n    \"moneda\": \"COP\",\r\n    \"subtotalSinImpuestos\": 210000,\r\n    \"totalImpuestos\": 3200,\r\n    \"costoEnvio\": 0,\r\n    \"descuento\": 0,\r\n    \"totalFactura\": 12800,\r\n    \"items\": [\r\n\r\n        {\r\n            \"idProducto\": 3,\r\n            \"cantidad\": 1,\r\n            \"precioUnitario\": 90000,\r\n            \"impuesto\": 16.00\r\n        },\r\n        {\r\n            \"idProducto\": 4,\r\n            \"cantidad\": 1,\r\n            \"precioUnitario\": 90000,\r\n            \"impuesto\": 16.00\r\n        }\t\t\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/api/Invoices",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/InvoiceLines/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44314/api/InvoiceLines/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"InvoiceLines",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/InvoiceLines",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCliente\": 3,\r\n    \"fechaPedido\": \"2025-09-11\",\r\n    \"estado\": \"Emitida\",\r\n    \"moneda\": \"COP\",\r\n    \"subtotalSinImpuestos\": 220000,\r\n    \"totalImpuestos\": 37200,\r\n    \"costoEnvio\": 0,\r\n    \"descuento\": 0,\r\n    \"totalPedido\": 172800,\r\n    \"items\": [\r\n        {\r\n            \"idProducto\": 2,\r\n            \"cantidad\": 2,\r\n            \"precioUnitario\": 60000,\r\n            \"impuesto\": 19.00\r\n        },\r\n        {\r\n            \"idProducto\": 5,\r\n            \"cantidad\": 1,\r\n            \"precioUnitario\": 90000,\r\n            \"impuesto\": 16.00\r\n        }\t\t\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/api/InvoiceLines",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"InvoiceLines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/InvoiceLines",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idPedido\": 200,\r\n    \"idCliente\": 2,\r\n    \"fechaPedido\": \"2025-07-07\",\r\n    \"estado\": \"Emitida\",\r\n    \"moneda\": \"COP\",\r\n    \"subtotalSinImpuestos\": 220000,\r\n    \"totalImpuestos\": 37200,\r\n    \"costoEnvio\": 0,\r\n    \"descuento\": 0,\r\n    \"totalPedido\": 172800,\r\n    \"items\": [\r\n        {\r\n            \"idProducto\": 2,\r\n            \"cantidad\": 2,\r\n            \"precioUnitario\": 60000,\r\n            \"impuesto\": 19.00\r\n        },\r\n        {\r\n            \"idProducto\": 3,\r\n            \"cantidad\": 1,\r\n            \"precioUnitario\": 90000,\r\n            \"impuesto\": 16.00\r\n        }\t\t\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/api/InvoiceLines",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"InvoiceLines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44314/api/InvoiceLines/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44314/api/InvoiceLines/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"InvoiceLines",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

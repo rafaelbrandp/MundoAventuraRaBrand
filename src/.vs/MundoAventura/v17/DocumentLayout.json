@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|c:\\users\\user\\downloads\\prueba 20250906\\proyecto\\mundoaventura\\ui\\ui\\views\\api\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|solutionrelative:ui\\ui\\views\\api\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|c:\\users\\user\\downloads\\prueba 20250906\\proyecto\\mundoaventura\\ui\\ui\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|solutionrelative:ui\\ui\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF1BC538-16F1-4D29-B457-3834D8F07815}|MiApi\\MiApi.csproj|c:\\users\\user\\downloads\\prueba 20250906\\proyecto\\mundoaventura\\miapi\\controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF1BC538-16F1-4D29-B457-3834D8F07815}|MiApi\\MiApi.csproj|solutionrelative:miapi\\controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF1BC538-16F1-4D29-B457-3834D8F07815}|MiApi\\MiApi.csproj|c:\\users\\user\\downloads\\prueba 20250906\\proyecto\\mundoaventura\\miapi\\controllers\\invoicelinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF1BC538-16F1-4D29-B457-3834D8F07815}|MiApi\\MiApi.csproj|solutionrelative:miapi\\controllers\\invoicelinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF1BC538-16F1-4D29-B457-3834D8F07815}|MiApi\\MiApi.csproj|c:\\users\\user\\downloads\\prueba 20250906\\proyecto\\mundoaventura\\miapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF1BC538-16F1-4D29-B457-3834D8F07815}|MiApi\\MiApi.csproj|solutionrelative:miapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|c:\\users\\user\\downloads\\prueba 20250906\\proyecto\\mundoaventura\\ui\\ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|solutionrelative:ui\\ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\ui\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|solutionrelative:ui\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\ui\\ui\\scripts\\global.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3873405D-591E-4639-9A30-0E18D0D4EB94}|UI\\UI\\UI.csproj|solutionrelative:ui\\ui\\scripts\\global.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Views\\Customer\\index.cshtml",
+              "RelativeDocumentMoniker": "UI\\UI\\Views\\Customer\\index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Views\\Customer\\index.cshtml",
+              "RelativeToolTip": "UI\\UI\\Views\\Customer\\index.cshtml",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAAANoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T07:50:37.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InvoicesController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\MiApi\\Controllers\\InvoicesController.cs",
+              "RelativeDocumentMoniker": "MiApi\\Controllers\\InvoicesController.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\MiApi\\Controllers\\InvoicesController.cs",
+              "RelativeToolTip": "MiApi\\Controllers\\InvoicesController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwB0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T07:34:20.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InvoiceLinesController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\MiApi\\Controllers\\InvoiceLinesController.cs",
+              "RelativeDocumentMoniker": "MiApi\\Controllers\\InvoiceLinesController.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\MiApi\\Controllers\\InvoiceLinesController.cs",
+              "RelativeToolTip": "MiApi\\Controllers\\InvoiceLinesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T07:34:18.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\MiApi\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "MiApi\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\MiApi\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "MiApi\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T07:34:14.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Views\\Api\\index.cshtml",
+              "RelativeDocumentMoniker": "UI\\UI\\Views\\Api\\index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Views\\Api\\index.cshtml",
+              "RelativeToolTip": "UI\\UI\\Views\\Api\\index.cshtml",
+              "ViewState": "AgIAAFgBAAAAAAAAAAAswGYBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T07:20:07.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Global.js",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Scripts\\Global.js",
+              "RelativeDocumentMoniker": "UI\\UI\\Scripts\\Global.js",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Scripts\\Global.js",
+              "RelativeToolTip": "UI\\UI\\Scripts\\Global.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-09T03:46:54.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "UI\\UI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "UI\\UI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T17:45:51.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Prueba 20250906\\Proyecto\\MundoAventura\\UI\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UI\\UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T06:50:16.443Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
