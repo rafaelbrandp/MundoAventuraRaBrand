@@ -161,3 +161,100 @@ end
 --------------------------------
 
 
+
+
+--------------------------------
+-- Trigger para auditoria de Tabla Facturas
+--------------------------------
+CREATE TRIGGER TR_Invoices_Audit
+ON Invoices
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    DECLARE @Usuario VARCHAR(100) = SYSTEM_USER;
+    
+    -- Inserciones (Nuevos registros)
+    INSERT INTO AuditLog (Accion, NombreTabla, RegistroId, UsuarioId, ValorNuevo)
+    SELECT 
+        'INSERT',
+        'Invoices',
+        CAST(inserted.IdFactura AS VARCHAR(100)),
+        @Usuario,
+        (SELECT * FROM inserted FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)
+    FROM inserted
+    WHERE NOT EXISTS (SELECT 1 FROM deleted);
+    
+    -- Eliminaciones (Registros antiguos)
+    INSERT INTO AuditLog (Accion, NombreTabla, RegistroId, UsuarioId, ValorAnterior)
+    SELECT 
+        'DELETE',
+        'Invoices',
+        CAST(deleted.IdFactura AS VARCHAR(100)),
+        @Usuario,
+        (SELECT * FROM deleted FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)
+    FROM deleted
+    WHERE NOT EXISTS (SELECT 1 FROM inserted);
+    
+    -- Actualizaciones (Antiguo vs Nuevo)
+    INSERT INTO AuditLog (Accion, NombreTabla, RegistroId, UsuarioId, ValorAnterior, ValorNuevo)
+    SELECT 
+        'UPDATE',
+        'Invoices',
+        CAST(inserted.IdFactura AS VARCHAR(100)),
+        @Usuario,
+        (SELECT * FROM deleted FOR JSON PATH, WITHOUT_ARRAY_WRAPPER),
+        (SELECT * FROM inserted FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)
+    FROM inserted
+    INNER JOIN deleted ON inserted.IdFactura = deleted.IdFactura;
+END;
+--------------------------------
+
+--------------------------------
+-- Trigger para auditoria de Tabla Detalle Facturas
+--------------------------------
+CREATE TRIGGER TR_InvoicesProducts_Audit
+ON InvoicesProducts
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    DECLARE @Usuario VARCHAR(100) = SYSTEM_USER;
+    
+    -- Inserciones
+    INSERT INTO AuditLog (Accion, NombreTabla, RegistroId, UsuarioId, ValorNuevo)
+    SELECT 
+        'INSERT',
+        'InvoicesProducts',
+        CAST(inserted.Id AS VARCHAR(100)),
+        @Usuario,
+        (SELECT * FROM inserted FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)
+    FROM inserted
+    WHERE NOT EXISTS (SELECT 1 FROM deleted);
+    
+    -- Eliminaciones
+    INSERT INTO AuditLog (Accion, NombreTabla, RegistroId, UsuarioId, ValorAnterior)
+    SELECT 
+        'DELETE',
+        'InvoicesProducts',
+        CAST(deleted.Id AS VARCHAR(100)),
+        @Usuario,
+        (SELECT * FROM deleted FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)
+    FROM deleted
+    WHERE NOT EXISTS (SELECT 1 FROM inserted);
+    
+    -- Actualizaciones
+    INSERT INTO AuditLog (Accion, NombreTabla, RegistroId, UsuarioId, ValorAnterior, ValorNuevo)
+    SELECT 
+        'UPDATE',
+        'InvoicesProducts',
+        CAST(inserted.Id AS VARCHAR(100)),
+        @Usuario,
+        (SELECT * FROM deleted FOR JSON PATH, WITHOUT_ARRAY_WRAPPER),
+        (SELECT * FROM inserted FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)
+    FROM inserted
+    INNER JOIN deleted ON inserted.Id = deleted.Id;
+END;
+--------------------------------
