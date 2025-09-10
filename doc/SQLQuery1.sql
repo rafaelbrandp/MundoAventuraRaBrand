@@ -1,8 +1,5 @@
 
 
---clientes, productos, facturas, pedidos
---Customers, Products, Invoices, InvoiceLines, AuditLog.
-
 --------------------------------
 -- clientes
 --------------------------------
@@ -18,7 +15,7 @@ CREATE TABLE Customers (
 	Pais VARCHAR(2)
 );
 --------------------------------
-
+GO
 
 --------------------------------
 -- Productos
@@ -30,6 +27,7 @@ CREATE TABLE Products (
 	Impuesto DECIMAL(5, 2)
 );
 --------------------------------
+GO
 
 --------------------------------
 -- Facturas
@@ -50,6 +48,7 @@ CREATE TABLE Invoices (
 );
 CREATE UNIQUE INDEX i_NumeroFactura ON Invoices (NumeroFactura);
 --------------------------------
+GO
 
 --------------------------------
 -- Productos por factura
@@ -64,7 +63,7 @@ CREATE TABLE InvoicesProducts (
 	FOREIGN KEY (IdFactura) REFERENCES Invoices(IdFactura)
 );
 --------------------------------
-
+GO
 
 --------------------------------
 -- Pedidos
@@ -83,6 +82,7 @@ CREATE TABLE InvoiceLines (
 	FOREIGN KEY (IdCliente) REFERENCES Customers(IdCliente)
 );
 --------------------------------
+GO
 
 --------------------------------
 -- Productos por Pedido
@@ -97,7 +97,7 @@ CREATE TABLE InvoiceLinesProducts (
 	FOREIGN KEY (IdPedido) REFERENCES InvoiceLines(IdPedido)
 );
 --------------------------------
-
+GO
 
 --------------------------------
 -- AuditLog
@@ -113,8 +113,7 @@ CREATE TABLE AuditLog (
     ValorNuevo NVARCHAR(MAX) NULL
 );
 --------------------------------
-
-
+GO
 
 --------------------------------
 -- Datos semilla: demo. 
@@ -159,9 +158,7 @@ begin
     commit transaction
 end
 --------------------------------
-
-
-
+GO
 
 --------------------------------
 -- Trigger para auditoria de Tabla Facturas
@@ -210,6 +207,7 @@ BEGIN
     INNER JOIN deleted ON inserted.IdFactura = deleted.IdFactura;
 END;
 --------------------------------
+GO
 
 --------------------------------
 -- Trigger para auditoria de Tabla Detalle Facturas
@@ -258,3 +256,4 @@ BEGIN
     INNER JOIN deleted ON inserted.Id = deleted.Id;
 END;
 --------------------------------
+GO
